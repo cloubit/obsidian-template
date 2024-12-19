@@ -42,7 +42,7 @@ else if (thoughtType === "Anderer Gedanke") {
 	if (thoughtTypeOther === "" ){thoughtTypeOther = noInfo};
 	thoughtType = thoughtTypeOther;
 };
-const thoughtTypeSearch = ["Projektgedanke", "Alltagsgedanken", "Veranstaltungsgedanke" "Idee", thoughtTypeOther];
+const thoughtTypeSearch = ["Projektgedanke", "Alltagsgedanken", "Veranstaltungsgedanke", "Idee", thoughtTypeOther];
 if (thoughtTypeSearch.includes(thoughtType)) {
 	thoughtOrganization = await tp.system.prompt("Trage die durchführende Institution ein");
 	if (thoughtOrganization === "" ){thoughtOrganization = noInfo};
