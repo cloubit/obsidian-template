@@ -20,18 +20,10 @@ substrTitle = (title.substring(5));
 tag = (substrTitle.toLowerCase());
 contentMark = "🌐 - ";
 titleMark = ":TiWorldSearch:";
+durability = "Dauerhaft";
 // Alias Namen definieren
 alias = await tp.system.prompt("Weise der Contentorganisation einen sprechenden Alias zu.");
-//Beständigkeit festlegen anhand "mark" Variablen
-if (mark.endsWith("- ")) { 
-	durability = "Dauerhaft";
-	}
-else if (mark.endsWith("~ ")) {
-	durability = "Befristet";
-	}
-else {
-	durability = "Unbekannt";
-};
+
 // Metadaten erstellen
 tR +=  `---
 Erstellt am: ${dateNow}

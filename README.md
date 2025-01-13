@@ -22,6 +22,9 @@ Mehr über [Obsidian](https://obsidian.md)
 		- simple-icons (Si)
 		- tabler-icons (Ti)
 
+# Obsidian Konfiguration
+- damit beim erstellen einer neuen Notiz nur die relevanten Templates angezeigt werden, empfielt es sich im in der Erweiterung Templater die "Template folder location auf "Templates/Main_Templates" zu stellen.
+
 ## Obsidian-Templates
 Wird Obsidian als Wissensdatenbank genutzt, empfiehlt sich eine Notiz Struktur, was die bereitgestellten Templates als Ziel verfolgen. Die Vorlagen ermöglichen die Erstellung automatisierter themenbasierter Vorlagen, die bei der Initialisierung bereits wichtige Aspekte abfragen und direkt in die Notiz integrieren. Zusätzlich wird die Notiz individuell mit internen Links erweitert, was ein Wiederauffinden der Notiz erleichtert und die Visualisierung der Verbindungen in einem Diagramm ermöglicht.
 
