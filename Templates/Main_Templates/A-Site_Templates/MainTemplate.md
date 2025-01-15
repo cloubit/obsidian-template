@@ -2,12 +2,13 @@
 /*
 * Description: Obsidian Templater main script for selecting notes and creating metadata
 * Autor: Cloubit GmbH, 4450 Sissach, Schweiz
-* Version: 0.9.0
+* Version: 0.9.1
 * License: MIT License
 * Copyright (c) 2024 Cloubit GmbH
 * 
 * Change Log:
 * - 2024-12-15: Initial release
+* - 2025-01-14: Bugfixes
 */
 
 // Variablen anlegen, definieren
