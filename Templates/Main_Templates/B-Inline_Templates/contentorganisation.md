@@ -1,17 +1,4 @@
 <%* 
-/* 
-* Script Name: _contentorganisation.md
-* Description: Obsidian Templater Script to create the content organisation.
-* Autor: Cloubit GmbH, 4450 Sissach, Schweiz
-* Version: 0.9.1
-* License: MIT License
-* Copyright (c) 2024 Thomas Sterchi
-* 
-* Change Log:
-* - 2024-11-12: Initial release
-* - 2025-01-14: Bugfixes
-*/
-
 // Variablen anlegen, definieren
 title = tp.file.title;
 noteType = "Contentorganisation";
