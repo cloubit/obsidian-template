@@ -86,6 +86,12 @@ Das folgende Mindmap bietet eine Übersicht der Untertypen.
 #### Frei definierbare Werte
 Jede Vorlage verfügt bei der Erstellung der Vorlage über frei definierbare Attribute. Die eingegebenen Attributwerte werden in der Schlüsselinformationstabelle der jeweiligen Notiz gespeichert. Werden wichtige Attributwerte nicht gesetzt, erscheint in der Schlüsselinformationstabelle das Attribut und der Wert "Keine Angabe". Wird bei weniger wichtigen Attributen keinen Wert zugewiesen, wird das Attribut in der Schlüsselinformationstabelle nicht aufgeführt.
 
+
 ## Allgemeines
 - **License:** MIT License / Copyright (c) 2024 Cloubit GmbH
 - **Sprache:** Deutsch
+- **Version** 0.9.1
+
+## Change Log:
+- 2024-11-12: Initial Test Release
+- 2025-01-15: Bugfixes
