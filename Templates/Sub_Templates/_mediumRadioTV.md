@@ -28,21 +28,21 @@ if (overAirDate === "" ){overAirDate = noInfo};
 mediaTopic = await tp.system.prompt("Beschreibe das Thema in ein bis drei Sätzen");
 if (mediaTopic === "" ){mediaTopic = noInfo};
 // Erhobene Informationen erstellen
-tR +=  `## :RiInformation2Line: Informationen zum Radio und TV Medium
+tR +=  `## :RiInformation2Line: Wichtige Kurzinformationen
 | | |
 |:---|:---|
 |**Artikeltyp:** |${artikelType}|
 |**Medientitel:** |${mediumTitle}|
 |**Sender:** |${transmitter}|
 |**Erscheinungsjahr:** |${overAirDate}|
-|**Thema:** |${mediaTopic}|`;
+|**Thema der Sendung:** |${mediaTopic}|`;
 %>
 
 ***
-## :FasArrowDownShortWide: Ausführliche Beschreibung des Radio und TV Mediums
+## :FasArrowDownShortWide: Ausführliche Beschreibung
 %% # Ab hier bis zu den *** kann der Inhalt individuell und frei gestaltet werden. %%
 
-### :LiBookOpenText: Inhaltsbeschreibung Radio und TV Medium
+### :LiBookOpenText: Inhaltsbeschreibung
 **Zusammenfassung der Sendung:** 
 
 **Wichtige Zeitangaben und Kurzbeschreibungen zur Auffindbarkeit wichtiger Aussagen :** 
@@ -51,24 +51,21 @@ tR +=  `## :RiInformation2Line: Informationen zum Radio und TV Medium
 
 **Bewertung:** 
 
-### :BoBxInfoSquare: Essenzielle Informationen zu Radio und TV Medium:
-
+### :BoBxInfoSquare: Essenzielle Informationen
 
 
 ***
 %% # Die Struktur des folgenden Abschnitts sollte nur mit bedacht geändert werden. %%
-## :RiAdvertisementLine: Weitergehende Informationen zum Radio und TV Medium
+## :RiAdvertisementLine: Weitergehende Informationen
 %% Informationstexte wie diesen dürfen gelöscht werden %%
 
-### :LiNotepadText: Sekundäre Informationen zum Radio und TV Medium: 
+### :LiNotepadText: Sekundäre Informationen
 %% # Hier können Informationen abgelegt werden, die nur indirekt mit der Notiz in Verbindung stehen, für die Notiz aber wichtig und Nützlich sind. %%
 
-
-### :BoBxMessageSquareDetail: Eigene Erkenntnisse und Gedanken zum Radio und TV Medium:
+### :BoBxMessageSquareDetail: Eigene Erkenntnisse und Gedanken
 %% # Hier können eigene Erkenntnisse, Erfahrungen, Gedanken usw. der Notiz hinzugefügt werden. %%
 
-
-### :SiCrowdsource: Quellen: 
+### :SiCrowdsource: Quellen
 %% # Hier können weitere Quellen hinterlegt und gegebenenfalls verlinkt werden, die zum wiederauffinden oder das Verständnis der Notiz wichtig und nützlich sind. %%
 <%*
 // Interne Links zu erhobenen Informationen werden zur besseren Wiederauffindbarkeit erstellt

@@ -34,21 +34,21 @@ if (lastCall === "" ){lastCall = tp.date.now("DD.MM.YYYY")};
 mediaTopic = await tp.system.prompt("Beschreibe das Thema in ein bis drei Sätzen");
 if (mediaTopic === "" ){mediaTopic = noInfo};
 // Erhobene Informationen erstellen
-tR += `## :RiInformation2Line: Informationen zum Online Medium
+tR += `## :RiInformation2Line: Wichtige Kurzinformationen
 | | |
 |:---|:---|
 |**Artikeltyp:** |${artikelType}|
 |**Medientitel:** |${mediumTitle}|
 |**URL Quelle:** |[${urlName}]("${urlSource}")|
 |**Datum des letzten Aufrufs:** |${lastCall}|
-|**Thema:** |${mediaTopic}|`;
+|**Thema des Internetmediums:** |${mediaTopic}|`;
 %>
 
 ***
-## :FasArrowDownShortWide: Ausführliche Beschreibung des Online Mediums
+## :FasArrowDownShortWide: Ausführliche Beschreibung
 %% # Ab hier bis zu den *** kann der Inhalt individuell und frei gestaltet werden. %%
 
-### :LiBookOpenText: Inhaltsbeschreibung des Online Medium
+### :LiBookOpenText: Inhaltsbeschreibung
 **Zusammenfassung:**
 
 **Wichtige Links:** 
@@ -57,24 +57,21 @@ tR += `## :RiInformation2Line: Informationen zum Online Medium
 
 **Bewertung :** 
 
-### :BoBxInfoSquare: Essenzielle Informationen zum Online Medium:
-
+### :BoBxInfoSquare: Essenzielle Informationen
 
 
 ***
 %% # Die Struktur des folgenden Abschnitts sollte nur mit bedacht geändert werden. %%
-## :RiAdvertisementLine: Weitergehende Informationen zum Online Medium
+## :RiAdvertisementLine: Weitergehende Informationen
 %% Informationstexte wie diesen dürfen gelöscht werden %%
 
-### :LiNotepadText: Sekundäre Informationen zum Online Medium: 
+### :LiNotepadText: Sekundäre Informationen
 %% # Hier können Informationen abgelegt werden, die nur indirekt mit der Notiz in Verbindung stehen, für die Notiz aber wichtig und Nützlich sind. %%
 
-
-### :BoBxMessageSquareDetail: Eigene Erkenntnisse und Gedanken zum Online Medium:
+### :BoBxMessageSquareDetail: Eigene Erkenntnisse und Gedanken
 %% # Hier können eigene Erkenntnisse, Erfahrungen, Gedanken usw. der Notiz hinzugefügt werden. %%
 
-
-### :SiCrowdsource: Quellen: 
+### :SiCrowdsource: Quellen
 %% # Hier können weitere Quellen hinterlegt und gegebenenfalls verlinkt werden, die zum wiederauffinden oder das Verständnis der Notiz wichtig und nützlich sind. %%
 <%* 
 // Interne Links zu erhobenen Informationen werden zur besseren Wiederauffindbarkeit erstellt

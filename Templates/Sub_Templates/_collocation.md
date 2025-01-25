@@ -23,7 +23,7 @@ if (collocationType === "Andere Zusammenstellung") {
 	collocationType = collocationOther;
 };
 // Informationen definieren
-collocationProject = await tp.system.prompt("Weise der Aufgabenliste einen Projekt zu.");	
+collocationProject = await tp.system.prompt("Weise der Zusammenstellung einen Projekt zu.");	
 if (collocationProject === "" ){collocationProject = noInfo};
 autorName = await tp.system.prompt("Trage den Autor ein");
 if (autorName === "" ){autorName = noInfo};
@@ -42,23 +42,22 @@ insertCollocationStatus = `|**Status** |${collocationStatus}| \n`;
 insertVersionNr = `|**Versions Nummer** |${versionNr}| \n`;
 insertSource = `|**Quelle:** |${source}| \n`;
 // Erhobene Informationen erstellen
-tR += `## :RiInformation2Line: Wichtige Informationen zur Zusammenstellung
+tR += `## :RiInformation2Line: Wichtige Kurzinformationen
 | | |
 |:---|:---|
-|**Art der Zusammenstellung:** |${collocationType}| \n`;
+|**Art der Notiz:** |${collocationType}| \n`;
 if (collocationProject === undefined){`\n`} else if (collocationProject === noInfo){`\n`} else {tR += insertCollocationProject};
 if (autorName === undefined){`\n`} else if (autorName === noInfo){`\n`} else {tR += insertAutorName};
 if (collocationStatus === undefined){`\n`} else if (collocationStatus === noInfo){`\n`} else {tR += insertCollocationStatus};
 if (versionNr === undefined){`\n`} else if (versionNr === noInfo){`\n`} else {tR += insertVersionNr};
 if (source === undefined){`\n`} else if (source === noInfo){`\n`} else {tR += insertSource};
-tR += `|**Wichtiges über die Zusammenstellung:** |${collocationTopic}|`;
+tR += `|**Thema der Notiz:** |${collocationTopic}|`;
 %>
 
 ***
-## :FasArrowDownShortWide: Ausführliche Beschreibung der Zusammenstellung
+## :FasArrowDownShortWide: Wichtige Informationen
 %% # Ab hier bis zu den *** kann der Inhalt individuell und frei gestaltet werden. %%
-
-##  :LiBookOpenText: Beschreibung der Zusammenstellung
+##  :LiBookOpenText: Beschreibung
 **Zusammenfassung:** 
 
 **Anforderungen für die Integration oder die Entwicklungsumgebung:** 
@@ -73,21 +72,21 @@ tR += `|**Wichtiges über die Zusammenstellung:** |${collocationTopic}|`;
 
 **FAQ**
 
-**Copyright und Lizenzinformationen**
+**Copyright und Lizenz Informationen**
 
 
 ***
 %% # Die Struktur des folgenden Abschnitts sollte nur mit bedacht geändert werden. %%
-## :RiAdvertisementLine: Weitergehende Informationen zur Zusammenstellung
+## :RiAdvertisementLine: Weitergehende Informationen
 %% Informationstexte wie diesen dürfen gelöscht werden %%
 
-### :LiNotepadText: Sekundäre Informationen zur Zusammenstellung: 
+### :LiNotepadText: Sekundäre Informationen
 %% # Hier können Informationen abgelegt werden, die nur indirekt mit der Notiz in Verbindung stehen, für die Notiz aber wichtig und Nützlich sind. %%
 
-### :BoBxMessageSquareDetail: Eigene Erkenntnisse und Gedanken zur Zusammenstellung:
+### :BoBxMessageSquareDetail: Eigene Erkenntnisse und Gedanken
 %% # Hier können eigene Erkenntnisse, Erfahrungen, Gedanken usw. der Notiz hinzugefügt werden. %%
 
-### :SiCrowdsource: Quellen: 
+### :SiCrowdsource: Quellen
 %% # Hier können weitere Quellen hinterlegt und gegebenenfalls verlinkt werden, die zum wiederauffinden oder das Verständnis der Notiz wichtig und nützlich sind. %%
 
 <%*

@@ -60,7 +60,7 @@ insertThoughtOrganization = `|**Durchführende Institution:**|${thoughtOrganizat
 insertThoughtCourse = `|**Disziplin:**|${thoughtCourse}| \n`;
 insertThoughtSubject = `|**Fachbereich:**|${thoughtSubject}| \n`;
 // Erhobene Informationen erstellen
-tR = `## :RiInformation2Line: Wichtige Informationen zum Gedanken
+tR = `## :RiInformation2Line: Wichtige Kurzinformationen
 | | |
 |:---|:---|
 |**Art des Gedankes:**|${thoughtType}|\n`;
@@ -72,10 +72,10 @@ tR += `|**Thema des Gedankens:**|${thoughtTopic}|`;
 %>
 
 ***
-## :FasArrowDownShortWide: Ausführliche Beschreibung des Gedankens
+## :FasArrowDownShortWide: Ausführliche Informationen
 %% # Ab hier bis zu den *** kann der Inhalt individuell und frei gestaltet werden. %%
 
-### :RiTaskLine: Beschreibung des Gedankens:
+### :RiTaskLine: Beschreibung
 **Zusammenfassung:** 
 
 **Wichtige Links:** 
@@ -84,27 +84,22 @@ tR += `|**Thema des Gedankens:**|${thoughtTopic}|`;
 
 **Bekannte Probleme:** 
 
-
-
-### :BoBxInfoSquare: Essenzielle Informationen zum Gedanken:
+### :BoBxInfoSquare: Essenzielle Informationen
 - **Die Welt retten:** Wenn es auch noch weit weg erscheint, die Zeit rennt!
-
 
 
 ***
 %% # Die Struktur des folgenden Abschnitts sollte nur mit bedacht geändert werden. %%
-## :RiAdvertisementLine: Weitergehende Informationen zum Gedanken
+## :RiAdvertisementLine: Weitergehende Informationen
 %% Informationstexte wie diesen dürfen gelöscht werden %%
 
-### :LiNotepadText: Sekundäre Informationen zum Gedanken: 
+### :LiNotepadText: Sekundäre Informationen
 %% # Hier können Informationen abgelegt werden, die nur indirekt mit der Notiz in Verbindung stehen, für die Notiz aber wichtig und Nützlich sind. %%
 
-
-### :BoBxMessageSquareDetail: Eigene Erkenntnisse und Gedanken zum Gedanken:
+### :BoBxMessageSquareDetail: Eigene Erkenntnisse und Gedanken
 %% # Hier können eigene Erkenntnisse, Erfahrungen, Gedanken usw. der Notiz hinzugefügt werden. %%
 
-
-### :SiCrowdsource: Quellen: 
+### :SiCrowdsource: Quellen
 %% # Hier können weitere Quellen hinterlegt und gegebenenfalls verlinkt werden, die zum wiederauffinden oder das Verständnis der Notiz wichtig und nützlich sind. %%
 <%*
 // Interne Links zu erhobenen Informationen werden zur besseren Wiederauffindbarkeit erstellt

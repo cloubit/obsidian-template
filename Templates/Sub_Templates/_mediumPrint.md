@@ -27,21 +27,21 @@ if (erscheinungsJahr === "" ){erscheinungsJahr = noInfo};
 mediaTopic = await tp.system.prompt("Beschreibe das Thema in ein bis drei Sätzen");
 if (mediaTopic === "" ){mediaTopic = noInfo};
 // Erhobene Informationen erstellen
-tR += `## :RiInformation2Line: Informationen zum Print Medium
+tR += `## :RiInformation2Line: Wichtige Kurzinformationen
 | | |
 |:---|:---|
 |**Artikeltyp:** |${artikelType}|
 |**Medientitel:** |${mediumTitle}|
 |**Autor/en:** |${autor}|
 |**Erscheinungsjahr:** |${erscheinungsJahr}|
-|**Thema:** |${mediaTopic}|`;
+|**Thema des Artikels:** |${mediaTopic}|`;
 %>
 
 ***
-## :FasArrowDownShortWide: Ausführliche Beschreibung des Print Mediums
+## :FasArrowDownShortWide: Ausführliche Informationen
 %% # Ab hier bis zu den *** kann der Inhalt individuell und frei gestaltet werden. %%
 
-### :LiBookOpenText: Inhaltsbeschreibung des Print Mediums
+### :LiBookOpenText: Inhaltsbeschreibung
 **Zusammenfassung :**
 
 **Wichtige Lesezeichen:** 
@@ -50,26 +50,24 @@ tR += `## :RiInformation2Line: Informationen zum Print Medium
 
 **Bewertung :** 
 
-
-### :BoBxInfoSquare: Essenzielle Informationen zum Print Medium:
+### :BoBxInfoSquare: Essenzielle Informationen
 - **Die Welt retten:** Wenn es auch noch weit weg erscheint, die Zeit rennt!
-
 
 
 ***
 %% # Die Struktur des folgenden Abschnitts sollte nur mit bedacht geändert werden. %%
-## :RiAdvertisementLine: Weitergehende Informationen zum Print Medium
+## :RiAdvertisementLine: Weitergehende Informationen
 %% Informationstexte wie diesen dürfen gelöscht werden %%
 
-### :LiNotepadText: Sekundäre Informationen zum Print Medium: 
+### :LiNotepadText: Sekundäre Informationen
 %% # Hier können Informationen abgelegt werden, die nur indirekt mit der Notiz in Verbindung stehen, für die Notiz aber wichtig und Nützlich sind. %%
 
 
-### :BoBxMessageSquareDetail: Eigene Erkenntnisse und Gedanken zum Print Medium:
+### :BoBxMessageSquareDetail: Eigene Erkenntnisse und Gedanken
 %% # Hier können eigene Erkenntnisse, Erfahrungen, Gedanken usw. der Notiz hinzugefügt werden. %%
 
 
-### :SiCrowdsource: Quellen: 
+### :SiCrowdsource: Quellen
 %% # Hier können weitere Quellen hinterlegt und gegebenenfalls verlinkt werden, die zum wiederauffinden oder das Verständnis der Notiz wichtig und nützlich sind. %%
 <%* 
 // Interne Links zu erhobenen Informationen werden zur besseren Wiederauffindbarkeit erstellt

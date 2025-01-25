@@ -69,10 +69,10 @@ insertLectureDate = `|**Datum :**|${lectureDate}| \n`;
 insertLecturer = `|**Dozent:**|${lecturer}| \n`;
 insertLectureLocation = `|**Ort der Durchführung:**|${lectureLocation}| \n`;
 // Erhobene Informationen erstellen
-tR +=  `## :RiInformation2Line: Wichtige Vorlesungsinformationen
+tR +=  `## :RiInformation2Line: Wichtige Kurzinformationen
 | | |
 |:---|:---|
-|**Art der Deklamation:**|${lectureType}|\n`;
+|**Art der Notiz:**|${lectureType}|\n`;
 if (lectureProject === undefined){`\n`} else if (lectureProject === noInfo){`\n`} else {tR += insertLectureProject};
 if (lectureOrganization === undefined){`\n`} else if (lectureOrganization === noInfo){`\n`} else { tR += insertLectureOrganization};
 if (lectureCourse === undefined){`\n`} else if (lectureCourse === noInfo){`\n`} else { tR += insertLectureCourse};
@@ -80,20 +80,19 @@ if (lectureSubject === undefined){`\n`} else if (lectureSubject === noInfo){`\n`
 if (lectureDate === undefined){`\n`} else if (lectureDate === noInfo){`\n`} else { tR += insertLectureDate};
 if (lecturer === undefined){`\n`} else if (lecturer === noInfo){`\n`} else { tR += insertLecturer};
 if (lectureLocation === undefined){`\n`} else if (lectureLocation === noInfo){`\n`} else { tR += insertLectureLocation};
-tR += `|**Thema der Deklamation:**|${lectureTopic}|`;
+tR += `|**Thema der Notiz:**|${lectureTopic}|`;
 %>
 
 ***
-## :FasArrowDownShortWide: Ausführliche Beschreibung der Deklamation
+## :FasArrowDownShortWide: Ausführliche Informationen
 %% # Ab hier bis zu den *** kann der Inhalt individuell und frei gestaltet werden. %%
 
-### :OcProjectRoadmap24: Schwerpunkte der Deklamation
+### :OcProjectRoadmap24: Schwerpunkte und Beschreibung
  1. **Begrüssung**
  2. .
  3. ...
  
-###  :LiBookOpenText: Essentielle Notizen zur Deklamation
-
+###  :LiBookOpenText: Essentielle Notizen
 
 ### :RaSpeechBubbles: Themenbezogene Diskusionspunkte
 - **Erster Diskusionspunkt:** 
@@ -104,16 +103,16 @@ tR += `|**Thema der Deklamation:**|${lectureTopic}|`;
 
 ***
 %% # Die Struktur des folgenden Abschnitts sollte nur mit bedacht geändert werden. %%
-## :RiAdvertisementLine: Weitergehende Informationen zur Deklamation
+## :RiAdvertisementLine: Weitergehende Informationen
 %% Informationstexte wie diesen dürfen gelöscht werden %%
 
-### :LiNotepadText: Sekundäre Informationen zur Deklamation: 
+### :LiNotepadText: Sekundäre Informationen
 %% # Hier können Informationen abgelegt werden, die nur indirekt mit der Notiz in Verbindung stehen, für die Notiz aber wichtig und Nützlich sind. %%
 
-### :BoBxMessageSquareDetail: Eigene Erkenntnisse und Gedanken zur Deklamation:
+### :BoBxMessageSquareDetail: Eigene Erkenntnisse und Gedanken
 %% # Hier können eigene Erkenntnisse, Erfahrungen, Gedanken usw. der Notiz hinzugefügt werden. %%
 
-### :SiCrowdsource: Quellen: 
+### :SiCrowdsource: Quellen
 %% # Hier können weitere Quellen hinterlegt und gegebenenfalls verlinkt werden, die zum wiederauffinden oder das Verständnis der Notiz wichtig und nützlich sind. %%
 
 <%*

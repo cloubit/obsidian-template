@@ -30,7 +30,7 @@ if (source === "" ){source = noInfo};
 productTopic = await tp.system.prompt("Beschreibe das Produkt in ein bis drei Sätzen");
 if (productTopic === "" ){productTopic = noInfo};
 // Erhobene Informationen erstellen
-tR +=  `## :RiInformation2Line: Wichtige Informationen zum Produkt
+tR +=  `## :RiInformation2Line: Wichtige Kurzinformationen
 | | |
 |:---|:---|
 |**Produkttyp:** |${productType}|
@@ -42,10 +42,10 @@ tR +=  `## :RiInformation2Line: Wichtige Informationen zum Produkt
 %>
 
 ***
-## :FasArrowDownShortWide: Ausführliche Produktbeschreibung
+## :FasArrowDownShortWide: Ausführliche Informationen
 %% # Ab hier bis zu den *** kann der Inhalt individuell und frei gestaltet werden. %%
 
-###  :LiBookOpenText: Produktbeschreibung:
+###  :LiBookOpenText: Beschreibung
 **Zusammenfassung:** 
 
 **Wichtige Links:** 
@@ -56,24 +56,21 @@ tR +=  `## :RiInformation2Line: Wichtige Informationen zum Produkt
 
 **bekannte Probleme :** 
 
-
-### :BoBxInfoSquare: Essenzielle Produktinformationen:
+### :BoBxInfoSquare: Essenzielle Informationen
 
 
 ***
 %% # Die Struktur des folgenden Abschnitts sollte nur mit bedacht geändert werden. %%
-## :RiAdvertisementLine: Weitergehende Produktinformationen
+## :RiAdvertisementLine: Weitergehende Informationen
 %% Informationstexte wie diesen dürfen gelöscht werden %%
 
-### :LiNotepadText: Sekundäre Produktinformationen: 
+### :LiNotepadText: Sekundäre Informationen:
 %% # Hier können Informationen abgelegt werden, die nur indirekt mit der Notiz in Verbindung stehen, für die Notiz aber wichtig und Nützlich sind. %%
 
-
-### :BoBxMessageSquareDetail: Eigene Erkenntnisse und Gedanken zum Produkt:
+### :BoBxMessageSquareDetail: Eigene Erkenntnisse und Gedanken
 %% # Hier können eigene Erkenntnisse, Erfahrungen, Gedanken usw. der Notiz hinzugefügt werden. %%
 
-
-### :SiCrowdsource: Quellen: 
+### :SiCrowdsource: Quellen
 %% # Hier können weitere Quellen hinterlegt und gegebenenfalls verlinkt werden, die zum wiederauffinden oder das Verständnis der Notiz wichtig und nützlich sind. %%
 <%*
 // Interne Links zu erhobenen Informationen werden zur besseren Wiederauffindbarkeit erstellt

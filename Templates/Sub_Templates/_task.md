@@ -73,7 +73,7 @@ insertTaskRealisationTime = `|**Geplanter Aufwand in Stunden:**|${taskRealisatio
 insertTaskLatestStartDate = `|**Letztes Start Datum **|${taskLatestStartDate}| \n`;
 insertTaskEndDate = `|**Spätestes Erledigungsdatum:**|${taskEndDate}| \n`;
 // Erhobene Informationen erstellen
-tR += `## :RiInformation2Line: Wichtige Aufgabeninformationen
+tR += `## :RiInformation2Line: Wichtige Kurzinformationen
 | | |
 |:---|:---|
 |**Art der Aufgabe:**|${taskType}|\n`;
@@ -88,26 +88,23 @@ tR += `|**Thema der Aufgabe:**|${taskTopic}|`;
 %>
 
 ***
-## :FasArrowDownShortWide: Ausführliche Beschreibung der Aufgabe
+## :FasArrowDownShortWide: Ausführliche Informationen
 %% # Ab hier bis zu den *** kann der Inhalt individuell und frei gestaltet werden. %%
 
-### :OcProjectRoadmap24: Aufgabenbeschreibung:
+### :OcProjectRoadmap24: Beschreibung
 **Zusammenfassung:**
 
 **Wissenswertes und Notizen:**
 
 **Mögliche Varianten:**
 
-
-### :BoBxInfoSquare: Essenzielle Informationen zur Aufgabenerledigung:
+### :BoBxInfoSquare: Essenzielle Informationen
 **Vorgaben:**
 
-
-### :RaSpeechBubbles: Unstrukturierte Gedanken zur Aufgabe:
+### :RaSpeechBubbles: Unstrukturierte Gedanken
 **Umsetzungsideen:**
 
-
-### :FasShoePrints: Prozessschritte zur Erledigung der Aufgabe:
+### :FasShoePrints: Prozessschritte zur Erledigung
 1. Informationen Sammeln
 2. Informationen Sortieren
 3. Informationen Auswerten
@@ -116,18 +113,16 @@ tR += `|**Thema der Aufgabe:**|${taskTopic}|`;
 
 ***
 %% # Die Struktur des folgenden Abschnitts sollte nur mit bedacht geändert werden. %%
-## :RiAdvertisementLine: Weitergehende Informationen zur Aufgabe
+## :RiAdvertisementLine: Weitergehende Informationen
 %% Informationstexte wie diesen dürfen gelöscht werden %%
 
-### :LiNotepadText: Sekundäre Informationen zur Aufgabe: 
+### :LiNotepadText: Sekundäre Informationen
 %% # Hier können Informationen abgelegt werden, die nur indirekt mit der Notiz in Verbindung stehen, für die Notiz aber wichtig und Nützlich sind. %%
 
-
-### :BoBxMessageSquareDetail: Eigene Erkenntnisse und Gedanken zur Aufgabe:
+### :BoBxMessageSquareDetail: Eigene Erkenntnisse und Gedanken
 %% # Hier können eigene Erkenntnisse, Erfahrungen, Gedanken usw. der Notiz hinzugefügt werden. %%
 
-
-### :SiCrowdsource: Quellen: 
+### :SiCrowdsource: Quellen
 %% # Hier können weitere Quellen hinterlegt und gegebenenfalls verlinkt werden, die zum wiederauffinden oder das Verständnis der Notiz wichtig und nützlich sind. %%
 <%*
 // Interne Links zu erhobenen Informationen werden zur besseren Wiederauffindbarkeit erstellt

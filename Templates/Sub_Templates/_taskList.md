@@ -61,7 +61,7 @@ insertTaskOrganization = `|**Durchführende Institution:**|${taskOrganization}| 
 insertTaskCourse = `|**Disziplin:**|${taskCourse}| \n`;
 insertTaskSubject = `|**Fachbereich:**|${taskSubject}| \n`;
 // Erhobene Informationen erstellen
-tR += `## :RiInformation2Line: Wichtige Aufgabeninformationen
+tR += `## :RiInformation2Line: Wichtige Kurzinformationen
 | | |
 |:---|:---|
 |**Art der Aufgabe:**|${taskType}|\n`;
@@ -73,35 +73,30 @@ tR += `|**Thema der Aufgabenliste:**|${taskTopic}|`;
 %>
 
 ***
-## :FasArrowDownShortWide: Ausführliche Beschreibung der Aufgabenliste
+## :FasArrowDownShortWide: Ausführliche Informationen
 %% # Ab hier bis zu den *** kann der Inhalt individuell und frei gestaltet werden. %%
 
-### :RiTaskLine: Aufgabenliste unsortiert:
-| Status | Thema der Aufgabe | Aufwand in Stunden | Letztes Startdatum | Spätestes Erledigungsdatum |
+### :RiTaskLine: Listen Beschreibung
+| Status | Thema | Aufwand in Stunden | Letztes Startdatum | Spätestes Erledigungsdatum |
 |:---|:---|:---|:---|:---| 
  - [ ] Die Welt Retten, 10000, 22.11.2024, 01.01.2050
  - [ ] ... 
  
-
-
-### :BoBxInfoSquare: Essenzielle Informationen zur Aufgabenerledigung:
+### :BoBxInfoSquare: Essenzielle Informationen
 - **Die Welt retten:** Wenn es auch noch weit weg erscheint, die Zeit rennt!
 
 
-
 ***
-## :RiAdvertisementLine: Weitergehende Informationen zur Aufgabenliste
+## :RiAdvertisementLine: Weitergehende Informationen
 %% Informationstexte wie diesen dürfen gelöscht werden %%
 
-### :LiNotepadText: Sekundäre Informationen zur Aufgabenliste: 
+### :LiNotepadText: Sekundäre Informationen
 %% # Hier können Informationen abgelegt werden, die nur indirekt mit der Notiz in Verbindung stehen, für die Notiz aber wichtig und Nützlich sind. %%
 
-
-### :BoBxMessageSquareDetail: Eigene Erkenntnisse und Gedanken zur Aufgabenliste:
+### :BoBxMessageSquareDetail: Eigene Erkenntnisse und Gedanken
 %% # Hier können eigene Erkenntnisse, Erfahrungen, Gedanken usw. der Notiz hinzugefügt werden. %%
 
-
-### :SiCrowdsource: Quellen: 
+### :SiCrowdsource: Quellen
 %% # Hier können weitere Quellen hinterlegt und gegebenenfalls verlinkt werden, die zum wiederauffinden oder das Verständnis der Notiz wichtig und nützlich sind. %%
 <%*
 // Interne Links zu erhobenen Informationen werden zur besseren Wiederauffindbarkeit erstellt

@@ -44,7 +44,7 @@ if (venue === "" ){venue = noInfo};
 participants = await tp.system.prompt("Trage die Sitzungsteilnehmenden ein");
 if (participants === "" ){participants = noInfo};
 // Erhobene Informationen erstellen
-tR +=  `## :RiInformation2Line: Wichtige Sitzungsinformationen
+tR +=  `## :RiInformation2Line: Wichtige Kurzinformationen
 | | |
 |:---|:---|
 |**Sitzungstyp:**|${meetingType}| \n`;
@@ -59,16 +59,15 @@ tR += `|**Thema der Sitzung:**|${meetingTopic}|
 %>
 
 ***
-## :FasArrowDownShortWide: Ausführliche Sitzungsinformationen
+## :FasArrowDownShortWide: Ausführliche Informationen
 %% # Ab hier bis zu den *** kann der Inhalt individuell und frei gestaltet werden. %%
 
-### :OcProjectRoadmap24: Sitzungsagenda & Schwerpunkte der Sitzung
+### :OcProjectRoadmap24: Agenda, Schwerpunkte und Beschreibung
  1. Begrüssung 
  2. Vorstellung der Teilnehmenden
  3. ... 
 
- 
-###  :LiBookOpenText: Wichtige Sitzungsbeschlüsse
+###  :LiBookOpenText: Wichtige Beschlüsse
 <%* 
 // Beschlusstabelle mit Protokollverantwortlichkeit erstellen
 tR+= `| Thema | Beschluss | Verantwortlichkeit | Erledigt bis |
@@ -84,20 +83,19 @@ tR+= `| Thema | Beschluss | Verantwortlichkeit | Erledigt bis |
 
 ### :FasShoePrints: Nächste Schritte
 
+
 ***
 %% # Die Struktur des folgenden Abschnitts sollte nur mit bedacht geändert werden. %%
-## :RiAdvertisementLine: Weitergehende Informationen zur Sitzung
+## :RiAdvertisementLine: Weitergehende Informationen
 %% Informationstexte wie diesen dürfen gelöscht werden %%
 
-### :LiNotepadText: Sekundäre Sitzungsinformationen: 
+### :LiNotepadText: Sekundäre Informationen: 
 %% # Hier können Informationen abgelegt werden, die nur indirekt mit der Notiz in Verbindung stehen, für die Notiz aber wichtig und Nützlich sind. %%
 
-
-### :BoBxMessageSquareDetail: Eigene Erkenntnisse und Gedanken zur Zusammenstellung:
+### :BoBxMessageSquareDetail: Eigene Erkenntnisse und Gedanken
 %% # Hier können eigene Erkenntnisse, Erfahrungen, Gedanken usw. der Notiz hinzugefügt werden. %%
 
-
-### :SiCrowdsource: Quellen: 
+### :SiCrowdsource: Quellen
 %% # Hier können weitere Quellen hinterlegt und gegebenenfalls verlinkt werden, die zum wiederauffinden oder das Verständnis der Notiz wichtig und nützlich sind. %%
 <%*
 // Interne Links zu erhobenen Informationen werden zur besseren Wiederauffindbarkeit erstellt

@@ -36,7 +36,7 @@ if (source === "" ){source = noInfo};
 codeTopic = await tp.system.prompt("Beschreibe die Funktion des Codes in ein bis drei Sätzen");
 if (codeTopic === "" ){codeTopic = noInfo};
 // Erhobene Informationen erstellen
-tR += `## :RiInformation2Line: Wichtige Informationen zum Quellcode
+tR += `## :RiInformation2Line: Wichtige Kurzinformationen
 | | |
 |:---|:---|
 |**Programmiersprache:** |${languageType}|
@@ -54,10 +54,10 @@ tR += `## :RiInformation2Line: Wichtige Informationen zum Quellcode
 %>
 
 ***
-## :FasArrowDownShortWide: Ausführliche Beschreibung des Quellcodes
+## :FasArrowDownShortWide: Ausführliche Informationen
 %% # Ab hier bis zu den *** kann der Inhalt individuell und frei gestaltet werden. %%
 
-###  :LiBookOpenText: Beschreibung des Quellcodes:
+###  :LiBookOpenText: Beschreibung
 **Zusammenfassung:** 
 
 **Wichtige Links:** 
@@ -68,7 +68,7 @@ tR += `## :RiInformation2Line: Wichtige Informationen zum Quellcode
 
 **Bekannte Probleme :** 
 
-### :BoBxInfoSquare: Essenzielle Informationen zum Quellcode:
+### :BoBxInfoSquare: Essenzielle Informationen
 **Einsatzplattform:**
 
 **Programmiersprache:**
@@ -80,18 +80,16 @@ tR += `## :RiInformation2Line: Wichtige Informationen zum Quellcode
 
 ***
 %% # Die Struktur des folgenden Abschnitts sollte nur mit bedacht geändert werden. %%
-## :RiAdvertisementLine: Weitergehende Informationen zum Quellcode
+## :RiAdvertisementLine: Weitergehende Informationen
 %% Informationstexte wie diesen dürfen gelöscht werden %%
 
-### :LiNotepadText: Sekundäre Informationen zum Quellcode: 
+### :LiNotepadText: Sekundäre Informationen
 %% # Hier können Informationen abgelegt werden, die nur indirekt mit der Notiz in Verbindung stehen, für die Notiz aber wichtig und Nützlich sind. %%
 
-
-### :BoBxMessageSquareDetail: Eigene Erkenntnisse und Gedanken zum Quellcode:
+### :BoBxMessageSquareDetail: Eigene Erkenntnisse und Gedanken
 %% # Hier können eigene Erkenntnisse, Erfahrungen, Gedanken usw. der Notiz hinzugefügt werden. %%
 
-
-### :SiCrowdsource: Quellen: 
+### :SiCrowdsource: Quellen
 %% # Hier können weitere Quellen hinterlegt und gegebenenfalls verlinkt werden, die zum wiederauffinden oder das Verständnis der Notiz wichtig und nützlich sind. %%
 <%*
 // Interne Links zu erhobenen Informationen werden zur besseren Wiederauffindbarkeit erstellt

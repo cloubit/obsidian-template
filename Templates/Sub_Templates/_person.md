@@ -39,7 +39,7 @@ if (personTopic === "" ){personTopic = noInfo};
 relevant = await tp.system.prompt("Trage die Relevanten Werke Kommagetrennt ein. Als interner [Link] oder externer [Linkbeschreibung](URL) ein");
 if (personTopic === "" ){personTopic = noInfo};
 // Erhobene Informationen erstellen
-tR +=  `## :RiInformation2Line: Informationen zur Person
+tR +=  `## :RiInformation2Line: Wichtige Kurzinformationen
 | | |
 |:---|:---|
 |**Name:** |${personName}|
@@ -52,10 +52,10 @@ tR +=  `## :RiInformation2Line: Informationen zur Person
 %>
 
 ***
-## :FasArrowDownShortWide: Ausführliche Beschreibung der Person
+## :FasArrowDownShortWide: Ausführliche Informationen
 %% # Ab hier bis zu den *** kann der Inhalt individuell und frei gestaltet werden. %%
 
-### :LiBookOpenText: Personenbeschreibung
+### :LiBookOpenText: Beschreibung
 **Zusammenfassung:** 
 
 **Wichtige Links:** 
@@ -67,18 +67,16 @@ tR +=  `## :RiInformation2Line: Informationen zur Person
 
 ***
 %% # Die Struktur des folgenden Abschnitts sollte nur mit bedacht geändert werden. %%
-## :RiAdvertisementLine: Weitergehende Informationen zur Person
+## :RiAdvertisementLine: Weitergehende Informationen
 %% Informationstexte wie diesen dürfen gelöscht werden %%
 
-### :LiNotepadText: Sekundäre Informationen zur Person: 
+### :LiNotepadText: Sekundäre Informationen
 %% # Hier können Informationen abgelegt werden, die nur indirekt mit der Notiz in Verbindung stehen, für die Notiz aber wichtig und Nützlich sind. %%
 
-
-### :BoBxMessageSquareDetail: Eigene Erkenntnisse und Gedanken zur Person:
+### :BoBxMessageSquareDetail: Eigene Erkenntnisse und Gedanken
 %% # Hier können eigene Erkenntnisse, Erfahrungen, Gedanken usw. der Notiz hinzugefügt werden. %%
 
-
-### :SiCrowdsource: Quellen: 
+### :SiCrowdsource: Quellen
 %% # Hier können weitere Quellen hinterlegt und gegebenenfalls verlinkt werden, die zum wiederauffinden oder das Verständnis der Notiz wichtig und nützlich sind. %%
 <%*
 // Interne Links zu erhobenen Informationen werden zur besseren Wiederauffindbarkeit erstellt
