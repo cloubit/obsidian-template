@@ -57,16 +57,16 @@ tR += `## :RiInformation2Line: Wichtige Kurzinformationen
 ## :FasArrowDownShortWide: Ausführliche Informationen
 %% # Ab hier bis zu den *** kann der Inhalt individuell und frei gestaltet werden. %%
 
-###  :LiBookOpenText: Beschreibung
-**Zusammenfassung:** 
+### :LiBookOpenText: Beschreibung
+**Zusammenfassung:**
 
-**Wichtige Links:** 
+**Wichtige Links:**
 
 **Wissenswertes und Notizen:**
 
 **Erweiterungen:**
 
-**Bekannte Probleme :** 
+**Bekannte Probleme :**
 
 ### :BoBxInfoSquare: Essenzielle Informationen
 **Einsatzplattform:**

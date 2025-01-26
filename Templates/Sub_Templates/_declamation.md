@@ -91,11 +91,11 @@ tR += `|**Thema der Notiz:**|${lectureTopic}|`;
  1. **Begrüssung**
  2. .
  3. ...
- 
-###  :LiBookOpenText: Essentielle Notizen
+
+### :LiBookOpenText: Essentielle Notizen
 
 ### :RaSpeechBubbles: Themenbezogene Diskusionspunkte
-- **Erster Diskusionspunkt:** 
+- **Erster Diskusionspunkt:**
 - **Zweiter Diskusionspunkt:**
 
 ### :FasShoePrints: Offene Fragen und Nachforschung

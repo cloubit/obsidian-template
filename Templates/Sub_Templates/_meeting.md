@@ -63,22 +63,22 @@ tR += `|**Thema der Sitzung:**|${meetingTopic}|
 %% # Ab hier bis zu den *** kann der Inhalt individuell und frei gestaltet werden. %%
 
 ### :OcProjectRoadmap24: Agenda, Schwerpunkte und Beschreibung
- 1. Begrüssung 
+ 1. Begrüssung
  2. Vorstellung der Teilnehmenden
- 3. ... 
+ 3. ...
 
-###  :LiBookOpenText: Wichtige Beschlüsse
-<%* 
+### :LiBookOpenText: Wichtige Beschlüsse
+<%*
 // Beschlusstabelle mit Protokollverantwortlichkeit erstellen
 tR+= `| Thema | Beschluss | Verantwortlichkeit | Erledigt bis |
 |:--- |:---|:---|:---|
 | Sitzungsprotokoll | Fertigstellung und Versand an Teilnehmende | ${meetingOrganiser} | ${dateNow} |
 | | | |
-| | | |`; 
+| | | |`;
 %>
 
 ### :RaSpeechBubbles: Themenbezogene Diskusionspunkte
-- **Erster Diskusionspunkt:** 
+- **Erster Diskusionspunkt:**
 - **Zweiter Diskusionspunkt:**
 
 ### :FasShoePrints: Nächste Schritte
@@ -89,7 +89,7 @@ tR+= `| Thema | Beschluss | Verantwortlichkeit | Erledigt bis |
 ## :RiAdvertisementLine: Weitergehende Informationen
 %% Informationstexte wie diesen dürfen gelöscht werden %%
 
-### :LiNotepadText: Sekundäre Informationen: 
+### :LiNotepadText: Sekundäre Informationen:
 %% # Hier können Informationen abgelegt werden, die nur indirekt mit der Notiz in Verbindung stehen, für die Notiz aber wichtig und Nützlich sind. %%
 
 ### :BoBxMessageSquareDetail: Eigene Erkenntnisse und Gedanken
@@ -100,7 +100,7 @@ tR+= `| Thema | Beschluss | Verantwortlichkeit | Erledigt bis |
 <%*
 // Interne Links zu erhobenen Informationen werden zur besseren Wiederauffindbarkeit erstellt
 tR += `### :CoLink: Weitere interne Links
-[[${contentMark}${noteType}]], [[${contentMark}${meetingType}]], [[${contentMark}${durability}]]`; 
+[[${contentMark}${noteType}]], [[${contentMark}${meetingType}]], [[${contentMark}${durability}]]`;
 if (insertProjectName === undefined){}
 else if (projectName === noInfo){}
 else { tR += `, [[${contentMark}${projectName}]]` };

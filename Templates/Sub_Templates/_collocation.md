@@ -23,7 +23,7 @@ if (collocationType === "Andere Zusammenstellung") {
 	collocationType = collocationOther;
 };
 // Informationen definieren
-collocationProject = await tp.system.prompt("Weise der Zusammenstellung einen Projekt zu.");	
+collocationProject = await tp.system.prompt("Weise der Zusammenstellung einen Projekt zu.");
 if (collocationProject === "" ){collocationProject = noInfo};
 autorName = await tp.system.prompt("Trage den Autor ein");
 if (autorName === "" ){autorName = noInfo};
@@ -55,12 +55,11 @@ tR += `|**Thema der Notiz:** |${collocationTopic}|`;
 %>
 
 ***
-## :FasArrowDownShortWide: Wichtige Informationen
+## :FasArrowDownShortWide: Ausführliche Informationen
 %% # Ab hier bis zu den *** kann der Inhalt individuell und frei gestaltet werden. %%
-##  :LiBookOpenText: Beschreibung
-**Zusammenfassung:** 
+###  :LiBookOpenText: Beschreibung
 
-**Anforderungen für die Integration oder die Entwicklungsumgebung:** 
+**Anforderungen für die Integration oder die Entwicklungsumgebung:**
 
 **Anleitung zur Installation und der Bedienung:**
 
@@ -68,11 +67,17 @@ tR += `|**Thema der Notiz:** |${collocationTopic}|`;
 
 **Erweiterungsmöglichkeiten:**
 
-**bekannte Probleme :** 
+**bekannte Probleme :**
 
-**FAQ**
+### :FarCircleQuestion: FAQ
+1. Titel Frage nummer 1
+   **Antwwort** Die ausformulierte Antwort
+2. Frage Nummer 2
+   **Antwort** Die ausformulierte Antwort
+3. Frage Nummer 3
+4. **Antwort** Die ausformulierte Antwort
 
-**Copyright und Lizenz Informationen**
+### :BoBxCopyright: Copyright und Lizenz Informationen
 
 
 ***

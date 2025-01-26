@@ -1,4 +1,4 @@
-<%* 
+<%*
 // Variablen anlegen, definieren
 mediumTitle = title;
 // Art der Notiz definieren
@@ -39,17 +39,17 @@ tR +=  `## :RiInformation2Line: Wichtige Kurzinformationen
 %>
 
 ***
-## :FasArrowDownShortWide: Ausführliche Beschreibung
+## :FasArrowDownShortWide: Ausführliche Informationen
 %% # Ab hier bis zu den *** kann der Inhalt individuell und frei gestaltet werden. %%
 
 ### :LiBookOpenText: Inhaltsbeschreibung
-**Zusammenfassung der Sendung:** 
+**Zusammenfassung der Sendung:**
 
-**Wichtige Zeitangaben und Kurzbeschreibungen zur Auffindbarkeit wichtiger Aussagen :** 
+**Wichtige Zeitangaben und Kurzbeschreibungen zur Auffindbarkeit wichtiger Aussagen :**
 
 **Wissenswertes und Notizen:**
 
-**Bewertung:** 
+**Bewertung:**
 
 ### :BoBxInfoSquare: Essenzielle Informationen
 

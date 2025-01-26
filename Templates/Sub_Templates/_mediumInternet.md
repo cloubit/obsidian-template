@@ -45,17 +45,17 @@ tR += `## :RiInformation2Line: Wichtige Kurzinformationen
 %>
 
 ***
-## :FasArrowDownShortWide: Ausführliche Beschreibung
+## :FasArrowDownShortWide: Ausführliche Informationen
 %% # Ab hier bis zu den *** kann der Inhalt individuell und frei gestaltet werden. %%
 
 ### :LiBookOpenText: Inhaltsbeschreibung
 **Zusammenfassung:**
 
-**Wichtige Links:** 
- 
+**Wichtige Links:**
+
 **Wissenswertes und Notizen:**
 
-**Bewertung :** 
+**Bewertung :**
 
 ### :BoBxInfoSquare: Essenzielle Informationen
 
@@ -73,7 +73,7 @@ tR += `## :RiInformation2Line: Wichtige Kurzinformationen
 
 ### :SiCrowdsource: Quellen
 %% # Hier können weitere Quellen hinterlegt und gegebenenfalls verlinkt werden, die zum wiederauffinden oder das Verständnis der Notiz wichtig und nützlich sind. %%
-<%* 
+<%*
 // Interne Links zu erhobenen Informationen werden zur besseren Wiederauffindbarkeit erstellt
 tR += `### :CoLink: Weitere interne Links:
 [[${contentMark}${noteType}]], [[Medien]], [[${contentMark}${artikelType}]], [[${contentMark}${durability}]]`;
